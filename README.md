@@ -53,7 +53,7 @@ clipkeeper start
 
 By default, the web interface is available at [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
-### 🖥 **Command-Line Options**
+### **Command-Line Options**
 #### View Clipboard History
 Display saved clipboard entries in the terminal:
 ```bash
@@ -76,7 +76,7 @@ clipkeeper clear
 
 ## Configuration
 
-### 🔧 **Default Settings**
+### **Default Settings**
 Configuration files are stored in the following location:
 ```
 %USERPROFILE%\.clipkeeper\config.ini
@@ -99,15 +99,15 @@ The Clipkeeper web interface is a central hub for managing your clipboard histor
 
 ---
 
-## 📜 Roadmap
+## Roadmap
 
-### ✅ Current Features
+### Current Features
 - Windows-only support
 - Text and image clipboard tracking
 - Web interface with real-time updates
 - Local, secure storage using SQLite
 
-### 📌 Planned Features
+### Planned Features
 - Cross-platform support (macOS and Linux)
 - Enhanced UI/UX with tagging and categorization
 - Clipboard history export/import
