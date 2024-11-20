@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clipkeeper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#111111',
+                    },
+                    keyframes: {
+                        shimmer: {
+                            '100%': { transform: 'translateX(100%)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwind">
+        @layer utilities {
+            .clip-content {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body class="bg-dark text-gray-100 min-h-screen overflow-x-hidden">
+    <header class="fixed top-0 left-0 right-0 bg-dark/90 backdrop-blur-md border-b border-gray-800/50 z-50">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="text-sm font-medium text-gray-400 hover:text-gray-300 transition-colors cursor-default select-none">
+                clipkeeper
+            </div>
+            
+            <div class="absolute left-1/2 -translate-x-1/2 w-full max-w-sm px-4">
+                <div class="relative">
+                    <input
+                        type="text"
+                        id="search"
+                        placeholder="Search clips..."
+                        class="w-full bg-gray-900/50 text-sm px-4 h-9 rounded-full border border-gray-800/50 focus:outline-none focus:border-blue-500/50 focus:ring-1 focus:ring-blue-500/30 placeholder-gray-500"
+                    >
+                </div>
+            </div>
+            
+            <div class="w-20"></div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 pt-24 pb-6">
+        <div id="history-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3"></div>
+    </main>
+
+    <script src="/static/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+include clipkeeper/web/static/css/styles.css
+include clipkeeper/web/static/js/main.js
+include clipkeeper/web/templates/index.html
