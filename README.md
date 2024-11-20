@@ -4,7 +4,7 @@
 
 ## Features
 
-### **Clipboard Management**
+### **Comprehensive Clipboard Management**
 - **Real-Time Monitoring:** Automatically capture clipboard content (text and images) as you work.
 - **Persistent Storage:** Save clipboard history securely in a local SQLite database for easy retrieval.
 - **Searchable History:** Locate previous entries with a keyword-based search system.

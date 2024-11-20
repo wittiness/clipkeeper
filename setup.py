@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="clipkeeper",
-    version="0.1.4",
+    version="0.1.5",
     packages=find_packages(),
     include_package_data=True,
     python_requires=">=3.8",
@@ -34,6 +34,7 @@ setup(
         "colorama>=0.4.4,<1.0.0",
         "pyperclip>=1.8.2",
         "pywin32>=305",
+        "pillow==11.0.0",
     ],
     extras_require={
         "dev": [

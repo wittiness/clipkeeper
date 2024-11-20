@@ -6,7 +6,7 @@ from .core import ClipboardManager
 from .web import WebInterface
 from .utils import logger
 
-__version__ = "0.1.4"
+__version__ = "0.1.5"
 __author__ = "wittiness"
 __license__ = "MIT"
 
